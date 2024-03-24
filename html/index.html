@@ -1,407 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
     <!-- link css -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- header -->
-    <header data-aos="fade-down"  data-aos-duration="4000">
-      <div class="header"  >
-        
+    <header data-aos="fade-down" data-aos-duration="4000">
+      <div class="header">
         <div class="headerbar">
-            <div class="account">
-                <ul>
-                    <a href="">
-                        <li>
-                            <i class="fa-solid fa-house-chimney"></i>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
-                        </li>
-                    </a>
-                    <div class="search" id="searchinput1">
-                        <input type="search">
-                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
-                    </div>
-                    <a href="signUp.html">
-                        <li>
-                            <i class="fa-solid fa-user" id="user-lap"></i>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-            <div class="nav" >
-                <ul>
-                    <a href="">
-                        <li>Home</li>
-                    </a>
-                    <a href="">
-                        <li>About</li>
-                    </a>
-                    <a href="">
-                        <li>Food Menu</li>
-                    </a>
-                    <a href="">
-                        <li>Book Table</li>
-                    </a>
-                </ul>
-            </div>
+          <div class="account">
+            <ul>
+              <a href="">
+                <li>
+                  <i class="fa-solid fa-house-chimney"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <i
+                    class="fa-solid fa-magnifying-glass searchicon"
+                    id="searchicon1"
+                  ></i>
+                </li>
+              </a>
+              <div class="search" id="searchinput1">
+                <input type="search" />
+                <i class="fa-solid fa-magnifying-glass srchicon"></i>
+              </div>
+              <a href="signUp.html">
+                <li>
+                  <i class="fa-solid fa-user" id="user-lap"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="nav">
+            <ul>
+              <li>
+                <a href=""> Home </a>
+              </li>
+
+              <li>
+                <a href=""> About </a>
+              </li>
+              
+              <li>
+                <a href=""> Food Menu </a>
+              </li>
+              
+              <li>
+                <a href=""> Book Table </a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
-        
+
         <!-- logo -->
         <div class="logo">
-            <img src="https://images.unsplash.com/photo-1610085927744-7217728267a6?q=80&w=1582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="logo">
+          <img
+            src="https://images.unsplash.com/photo-1610085927744-7217728267a6?q=80&w=1582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="logo"
+          />
         </div>
-        
+
         <div class="bar">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark" id="hdcross"></i>
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark" id="hdcross"></i>
         </div>
         <!-- navbar -->
         <div class="nav">
-            <ul>
-                <!-- home -->
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <!-- menu -->
-                <a href="#food_items">
-                    <li> Food Menu</li>
-                </a>
-                <!-- about -->
-                <a href="#main_slide2">
-                    <li>About</li>
-                </a>
-                <!-- book table -->
-                <a href="#main_slide4">
-                    <li>Chef</li>
-                </a>
-                
-            </ul>
+          <ul>
+            <!-- home -->
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <!-- menu -->
+            <a href="#food_items">
+              <li>Food Menu</li>
+            </a>
+            <!-- about -->
+            <a href="#main_slide2">
+              <li>About</li>
+            </a>
+            <!-- book table -->
+            <a href="#main_slide4">
+              <li>Chef</li>
+            </a>
+          </ul>
         </div>
         <div class="account">
-            <ul>
-                <!-- home icons -->
-                <a href="#">
-                    <li>
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </li>
-                </a>
-                <!-- search icon -->
-                <a href="#">
-                    <li>
-                        <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
-                    </li>
-                </a>
-                <div class="search" id="searchinput2">
-                    <input type="search">
-                    <i class="fa-solid fa-magnifying-glass srchicon"></i>
-                </div>
-                <a href="/html/signUp.html" target="_parent">
-                    <li>
-                        <i class="fa-solid fa-user" id="user-lap"></i>
-                    </li>
-                </a>
-            </ul>
+          <ul>
+            <!-- home icons -->
+            <a href="#">
+              <li>
+                <i class="fa-solid fa-house-chimney"></i>
+              </li>
+            </a>
+            <!-- search icon -->
+            <a href="#">
+              <li>
+                <i
+                  class="fa-solid fa-magnifying-glass searchicon"
+                  id="searchicon2"
+                ></i>
+              </li>
+            </a>
+            <div class="search" id="searchinput2">
+              <input type="search" />
+              <i class="fa-solid fa-magnifying-glass srchicon"></i>
+            </div>
+            <a href="/html/signUp.html" target="_parent">
+              <li>
+                <i class="fa-solid fa-user" id="user-lap"></i>
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
     </header>
-   
+
     <!-- home -->
     <div class="home">
-        
-        <div class="main_slide"  data-aos="fade-right"  data-aos-duration="4000">
-            <div data-aos="flip-left"
-             data-aos-easing="ease-out-cubic"
-             data-aos-duration="2000">
-                <h1>Enjoy <span > Delicious Food</span> in your Healthy Life</h1>
-                <p > Eating a balanced diet that includes a variety of nutrient-dense foods such as fruits, vegetables, nuts, seeds, lean
-                protein, and whole grains can help support your overall health. These foods are rich in vitamins, minerals, and
-                antioxidants that are essential for optimal body function. Consuming a wide range of healthy foods can also help
-                reduce the risk of chronic diseases such as heart disease, diabetes, and cancer</p>
-                <button class="red-btn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
-            </div>
-            <div data-aos="flip-right"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
-                <img src="/Images/img1.png" alt="Main Slide">
-            </div>
+      <div class="main_slide" data-aos="fade-right" data-aos-duration="4000">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h1>Enjoy <span> Delicious Food</span> in your Healthy Life</h1>
+          <p>
+            Eating a balanced diet that includes a variety of nutrient-dense
+            foods such as fruits, vegetables, nuts, seeds, lean protein, and
+            whole grains can help support your overall health. These foods are
+            rich in vitamins, minerals, and antioxidants that are essential for
+            optimal body function. Consuming a wide range of healthy foods can
+            also help reduce the risk of chronic diseases such as heart disease,
+            diabetes, and cancer
+          </p>
+          <button class="red-btn">
+            Visit Now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+        <div
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img src="/Images/img1.png" class="img1" alt="Main Slide" />
+        </div>
+      </div>
+
+      <!-- food items -->
+
+      <div
+        class="food_items"
+        id="food_items"
+        data-aos="zoom-left"
+        data-aos-duration="4000"
+      >
+        <!-- idly -->
+        <div
+          class="item"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="4000"
+        >
+          <div>
+            <img src="/Images/img2.png" alt="Idly" />
+          </div>
+          <h3>Idly</h3>
+          <p>
+            Idly is a South Indian steamed rice cake made with fermented batter.
+          </p>
+          <a href="/html/foodmenu.html"
+            ><button class="white_btn">See Menu</button></a
+          >
+        </div>
+        <!-- dosa -->
+        <div
+          class="item"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="4000"
+        >
+          <div>
+            <img src="/Images/idly.jpeg" alt="" />
+          </div>
+          <h3>Dosa</h3>
+          <p>Dosa is a South Indian crepe made from fermented batter.</p>
+          <a href="/html/foodmenu.html"
+            ><button class="white_btn">See Menu</button></a
+          >
         </div>
 
-        <!-- food items -->
+        <!-- biriyani -->
+        <div
+          class="item"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="4000"
+        >
+          <div>
+            <img src="/Images/biriyani.jpeg" alt="biriyani" />
+          </div>
+          <h3>Biriyani</h3>
+          <p>Biryani is a mixed rice dish originating from South Asia.</p>
+          <a href="/html/foodmenu.html"
+            ><button class="white_btn">See Menu</button></a
+          >
+        </div>
+        <!-- parotta -->
+        <div
+          class="item"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="4000"
+        >
+          <div>
+            <img src="/Images/parotta.jpeg" alt="parotta" />
+          </div>
+          <h3>Parotta</h3>
+          <p>Parotta is a flaky South Indian flatbread made from maida.</p>
+          <a href="/html/foodmenu.html"
+            ><button class="white_btn">See Menu</button></a
+          >
+        </div>
+        <!-- chicken rice -->
+        <div
+          class="item"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="4000"
+        >
+          <div>
+            <img src="/Images/chickenRice.jpg" alt="chicken rice" />
+          </div>
+          <h3>Chicken Rice</h3>
+          <p>Chicken rice is a popular dish in Malaysia and Singapore.</p>
+          <a href="/html/foodmenu.html"
+            ><button class="white_btn">See Menu</button></a
+          >
+        </div>
+      </div>
+      <div
+        class="main_slide2"
+        id="main_slide2"
+        data-aos="fade-right"
+        data-aos-duration="4000"
+      >
+        <div
+          class="fooding"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1612927601601-6638404737ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm9vZGxlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+        </div>
+        <!-- feed back -->
+        <div
+          class="question"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <div>
+            <h2>Why People Choose Us?</h2>
+          </div>
+          <div>
+            <!--Q&A 1 -->
+            <div class="q_ans">
+              <div>
+                <img
+                  src="https://www.bing.com/th?id=OIP.UNNFCBXmQq29bs_9hKpEsAHaNH&w=146&h=259&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                  alt="Egg Dosa"
+                />
+              </div>
+              <div>
+                <h4>Choose your Favourite</h4>
+                <p>
+                  It is a protein-rich breakfast option that can be enjoyed with
+                  chutney or curry
+                </p>
+              </div>
+            </div>
+            <!--Q&A 2 -->
+            <div class="q_ans">
+              <div>
+                <img
+                  src="https://media.istockphoto.com/id/1409887791/photo/porotta.webp?b=1&s=170667a&w=0&k=20&c=MWcF6BClDpE0gecXNvJqjiexgZh0L2HU7wlJeNvqFvo="
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4>Choose your Favourite</h4>
+                <p>
+                  This recipe uses rice and lentil crepe topped with seasoned
+                  eggs in an omelette form or bulls-eye form
+                </p>
+              </div>
+            </div>
+            <!--Q&A 3 -->
+            <div class="q_ans">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5vb2RsZXN8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4>Choose your Favourite</h4>
+                <p>
+                  Noodles are a staple food in many cultures. They come in
+                  numerous shapes and sizes and can be fresh or dried.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main_slide3"
+        id="main_slide3"
+        data-aos="fade-left"
+        data-aos-duration="4000"
+      >
+        <div
+          class="fav_head"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h3>Our Popular Dish</h3>
+          <p>
+            Tamil Nadu is known for its rich and diverse cuisine. Here are some
+            popular dishes from the region.
+          </p>
+        </div>
+        <div
+          class="fav_food"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <!-- chicken biriyani -->
+          <div class="item">
+            <div>
+              <img
+                src="https://media.istockphoto.com/id/1453499717/photo/chicken-biryani-or-biriyani-served-in-plate-isolated-on-table-top-view-indian-spicy-food.webp?b=1&s=170667a&w=0&k=20&c=UJcA-IR5iua10_r7ca41tk1c3F7fZkkjoL2_HCaEwMA="
+                alt=""
+              />
+            </div>
+            <h3>Biriyani</h3>
+            <p>Biryani is a mixed rice dish originating from South Asia.</p>
+            <p class="fav_price">₹100</p>
+          </div>
+          <!-- Chicken Rice -->
+          <div class="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1581184953963-d15972933db1?q=80&w=1265&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <h3>Chicken Rice</h3>
+            <p>Chicken rice is a popular dish in Malaysia and Singapore</p>
+            <p class="fav_price">₹70</p>
+          </div>
+          <!-- ramen -->
+          <div class="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1632440722549-692fc6af969e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbWVufGVufDB8fDB8fHww"
+                alt=""
+              />
+            </div>
+            <h3>Ramen</h3>
+            <p>
+              Ramen is a Japanese noodle soup dish made with wheat noodles and
+              broth. It can be served with an assortment of toppings.
+            </p>
+            <p class="fav_price">₹150</p>
+          </div>
+        </div>
+        <div class="dsgn"></div>
+      </div>
 
-        <div class="food_items" id="food_items"  data-aos="zoom-left"  data-aos-duration="4000">
-            <!-- idly -->
-            <div class="item" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                 data-aos-duration="4000">
-                <div>
-                    <img src="/Images/img2.png" alt="Idly">
-                </div>
-                <h3>Idly</h3>
-                <P>
-                    Idly is a South Indian steamed rice cake made with fermented batter.
-                </P>
-                <a href="/html/foodmenu.html"><button class="white_btn">See Menu</button></a>
-                
-            </div>
-            <!-- dosa -->
-            <div class="item" data-aos="flip-right"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="4000">
-                <div>
-                    <img src="/Images/idly.jpeg" alt="">
-                </div>
-                <h3>Dosa</h3>
-                <P>
-                    Dosa is a South Indian crepe made from fermented batter.
-                </P>
-                <a href="/html/foodmenu.html"><button class="white_btn">See Menu</button></a>
-            </div>
-         
-            <!-- biriyani -->
-            <div class="item"data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="4000">
-                <div>
-                    <img src="/Images/biriyani.jpeg" alt="biriyani">
-                </div>
-                <h3>Biriyani</h3>
-                <P>
-                    Biryani is a mixed rice dish originating from South Asia.
-                </P>
-                <a href="/html/foodmenu.html"><button class="white_btn">See Menu</button></a>
-            </div>
-            <!-- parotta -->
-            <div class="item" data-aos="flip-right"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="4000">
-                <div>
-                    <img src="/Images/parotta.jpeg" alt="parotta">
-                </div>
-                <h3>Parotta</h3>
-                <P>
-                    Parotta is a flaky South Indian flatbread made from maida.
-                </P>
-                <a href="/html/foodmenu.html"><button class="white_btn">See Menu</button></a>
-            </div>
-            <!-- chicken rice -->
-            <div class="item" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="4000">
-                <div>
-                    <img src="/Images/chickenRice.jpg" alt="chicken rice">
-                </div>
-                <h3>Chicken Rice</h3>
-                <P>
-                    Chicken rice is a popular dish in Malaysia and Singapore.
-                </P>
-                <a href="/html/foodmenu.html"><button class="white_btn">See Menu</button></a>
-            </div>
-     
-        </div>
-        <div class="main_slide2"  id="main_slide2" data-aos="fade-right" data-aos-duration="4000">
-            <div class="fooding" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
-                <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm9vZGxlc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
-            </div>
-            <!-- feed back -->
-            <div class="question" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
-                <div>
-                    <h2>Why People Choose Us?</h2>
-                </div>
-                <div>
-                    <!--Q&A 1 -->
-                    <div class="q_ans">
-                        <div>
-                            <img src="https://www.bing.com/th?id=OIP.UNNFCBXmQq29bs_9hKpEsAHaNH&w=146&h=259&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Egg Dosa">
-                        </div>
-                        <div>
-                            <h4>Choose your Favourite</h4>
-                            <p>It is a protein-rich breakfast option that can be enjoyed with chutney or curry</p>
-                        </div>
-                    </div>
-                    <!--Q&A 2 -->
-                    <div class="q_ans">
-                        <div>
-                            <img src="https://media.istockphoto.com/id/1409887791/photo/porotta.webp?b=1&s=170667a&w=0&k=20&c=MWcF6BClDpE0gecXNvJqjiexgZh0L2HU7wlJeNvqFvo=" alt="">
-                        </div>
-                        <div>
-                            <h4>Choose your Favourite</h4>
-                            <p>This recipe uses rice and lentil crepe topped with seasoned eggs in an omelette form or bulls-eye form</p>
-                        </div>
-                    </div>
-                    <!--Q&A 3 -->
-                    <div class="q_ans">
-                        <div>
-                            <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5vb2RsZXN8ZW58MHx8MHx8fDA%3D" alt="">
-                        </div>
-                        <div>
-                            <h4>Choose your Favourite</h4>
-                            <p>Noodles are a staple food in many cultures. They come in numerous shapes and sizes and can be fresh or dried.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main_slide3" id="main_slide3"   data-aos="fade-left"  data-aos-duration="4000">
-            <div class="fav_head" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <h3>Our Popular Dish</h3>
-                <p>Tamil Nadu is known for its rich and diverse cuisine. Here are some popular dishes from the region.</p>
-            </div>
-            <div class="fav_food" data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <!-- chicken biriyani -->
-                <div class="item">
-                    <div>
-                        <img src="https://media.istockphoto.com/id/1453499717/photo/chicken-biryani-or-biriyani-served-in-plate-isolated-on-table-top-view-indian-spicy-food.webp?b=1&s=170667a&w=0&k=20&c=UJcA-IR5iua10_r7ca41tk1c3F7fZkkjoL2_HCaEwMA=" alt="">
-                    </div>
-                    <h3>Biriyani</h3>
-                    <p>Biryani is a mixed rice dish originating from South Asia.</p>
-                    <p class="fav_price">₹100</p>
-                </div>
-                <!-- Chicken Rice -->
-                <div class="item">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1581184953963-d15972933db1?q=80&w=1265&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </div>
-                    <h3>Chicken Rice</h3>
-                    <p>Chicken rice is a popular dish in Malaysia and Singapore</p>
-                    <p class="fav_price">₹70</p>
-                </div>
-                <!-- ramen -->
-                <div class="item">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1632440722549-692fc6af969e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbWVufGVufDB8fDB8fHww" alt="">
-                    </div>
-                    <h3>Ramen</h3>
-                    <p>Ramen is a Japanese noodle soup dish made with wheat noodles and broth. It can be served with an assortment of toppings.</p>
-                    <p class="fav_price">₹150</p>
-                </div>
-            </div>
-            <div class="dsgn"> </div>
-        </div>
-
-        <div class="main_slide4" id="main_slide4"  data-aos="fade-right"  data-aos-duration="4000">
-            <div class="chef_feed" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-                <h2>Customer <span style="color: red;">Feedback</span></h2>
-                <p>The study designed a survey instrument based on the standard form used for grading the food premises and transformed it
-                into a seven Likert scale questionnaire and consists of seven questions. The results indicated that the fuzzy conjoint
-                analysis produced a similar outcome as the statistical mean, thus, was useful for the evaluation of customer
-                satisfaction on the cleanliness of food premises</p>
-                <div class="chef_detail" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-                    <div >
-                        <img src="/Images/chef.jpeg" alt="chef1" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-                    </div>
-                    <div>
-                        <h6>Kaliyappan</h6>
-                        <p>Head Chef </p>
-                    </div>
-                </div>
-                <div class="chef_vic">
-                    <div>
-                        <i class="fa-solid fa-hand-peace"></i>
-                        <h4>37</h4>
-                        <p>I have done more dishes</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-trophy"></i>
-                        <h4>956</h4>
-                        <p>I have more experience in the non veg food items</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chef">
-                <img src="/Images/chef.jpeg" alt="c1">
-            </div>
-        </div>
-        <div class="letter" data-aos="fade-right"  data-aos-duration="10000">
-            <div class="letter_head"
+      <div
+        class="main_slide4"
+        id="main_slide4"
+        data-aos="fade-right"
+        data-aos-duration="4000"
+      >
+        <div
+          class="chef_feed"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h2>Customer <span style="color: red">Feedback</span></h2>
+          <p>
+            The study designed a survey instrument based on the standard form
+            used for grading the food premises and transformed it into a seven
+            Likert scale questionnaire and consists of seven questions. The
+            results indicated that the fuzzy conjoint analysis produced a
+            similar outcome as the statistical mean, thus, was useful for the
+            evaluation of customer satisfaction on the cleanliness of food
+            premises
+          </p>
+          <div
+            class="chef_detail"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <h2>Subscribe <span>News Letter</span></h2>
+            data-aos-duration="2000"
+          >
+            <div>
+              <img
+                src="/Images/chef.jpeg"
+                alt="chef1"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              />
             </div>
-            <div class="letter_input" data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <div>
-                    <input type="email" placeholder="Example.com">
-                </div>
-                <button class="red-btn">Subscribe</button>
+            <div>
+              <h6>Kaliyappan</h6>
+              <p>Head Chef</p>
             </div>
+          </div>
+          <div class="chef_vic">
+            <div>
+              <i class="fa-solid fa-hand-peace"></i>
+              <h4>37</h4>
+              <p>I have done more dishes</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-trophy"></i>
+              <h4>956</h4>
+              <p>I have more experience in the non veg food items</p>
+            </div>
+          </div>
         </div>
-
-
-        
-       
-
+        <div class="chef">
+          <img src="/Images/chef.jpeg" alt="c1" />
+        </div>
+      </div>
+      <div class="letter" data-aos="fade-right" data-aos-duration="10000">
+        <div
+          class="letter_head"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h2>Subscribe <span>News Letter</span></h2>
+        </div>
+        <div
+          class="letter_input"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <div>
+            <input type="email" placeholder="Example.com" />
+          </div>
+          <button class="red-btn">Subscribe</button>
+        </div>
+      </div>
     </div>
 
     <!-- footer -->
-    <div class="footer"  data-aos="fade-right"  data-aos-duration="4000">
-        <div class="footer_1"
+    <div class="footer" data-aos="fade-right" data-aos-duration="4000">
+      <div
+        class="footer_1"
         data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-            <div class="logo">
-                <img src="https://images.unsplash.com/photo-1610085927744-7217728267a6?q=80&w=1582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="logo">
-            </div>
-            <div data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-                <address>
-                    <p>Restaurant Name : Shree Ganesha Restaurant</p>
-                    <p> Owner: Mr.Kaliyappan</p>
-                    <p>Email: kaliyappanpachiyappan@gmail.com</p>
-                    <p>YouTube: Ganesha Restaurant</p>
-                    <p>1/426A B.Agraharam <br> Pennagaram <br>Dharmapuri - 636813</p>
-                </address>
-            </div>
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <div class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1610085927744-7217728267a6?q=80&w=1582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="logo"
+          />
         </div>
-        <div class="footer_2" data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-            <img src="data:image/jpeg;base64,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" alt="">
-            <h1>Powered by <em>Nithesh</em></h1>
-            <div>
-                <p>@ Copy Right By VijayKumar</p>
-            </div>
+        <div
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <address>
+            <p>Restaurant Name : Shree Ganesha Restaurant</p>
+            <p>Owner: Mr.Kaliyappan</p>
+            <p>Email: kaliyappanpachiyappan@gmail.com</p>
+            <p>YouTube: Ganesha Restaurant</p>
+            <p>
+              1/426A B.Agraharam <br />
+              Pennagaram <br />Dharmapuri - 636813
+            </p>
+          </address>
         </div>
-        
+      </div>
+      <div
+        class="footer_2"
+        data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+        <h1>Powered by <em>Nithesh</em></h1>
+        <div>
+          <p>@ Copy Right By VijayKumar</p>
+        </div>
+      </div>
     </div>
     <!-- AOS library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
